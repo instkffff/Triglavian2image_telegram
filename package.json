@@ -1,0 +1,27 @@
+{
+  "name": "triglavian2image_telegram",
+  "version": "1.0.0",
+  "description": "triglavian, eve online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/instkffff/Triglavian2image_telegram.git"
+  },
+  "keywords": [
+    "eve",
+    "online"
+  ],
+  "author": "NightCandle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/instkffff/Triglavian2image_telegram/issues"
+  },
+  "homepage": "https://github.com/instkffff/Triglavian2image_telegram#readme",
+  "dependencies": {
+    "telegraf": "^3.38.0",
+    "text2png": "^2.3.0"
+  }
+}
