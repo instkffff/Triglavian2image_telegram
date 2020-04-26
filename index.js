@@ -13,8 +13,10 @@ bot.on('inline_query', async({ inlineQuery, answerInlineQuery }) => {
 		lineSpacing:3, 
 		xpadding:3, 
 		ypadding:3, 
-		backgroundColor: '#222c36' })
+		backgroundColor: '#222c36',
+		output: 'dataURL' })
 	
+	console.log(url)
 
 	let results = []
 
