@@ -15,7 +15,20 @@ bot.on('inline_query', async({ inlineQuery, answerInlineQuery }) => {
 		lineSpacing:3, 
 		xpadding:3, 
 		ypadding:3, 
-		backgroundColor: '#222c36'})
+		backgroundColor: '#222c36'
+	}).catch(error){
+		console.log('error')
+		img = text2png( 'Triglavian',{
+		textColor: 'white',
+		localFontPath:'./Triglavian.otf', 
+		localFontName: 'Triglavian',
+		font: '20px Triglavian', 
+		lineSpacing:3, 
+		xpadding:3, 
+		ypadding:3, 
+		backgroundColor: '#222c36'
+	})
+	}
 
 	fs.writeFileSync(`./image/${inlineQuery.query}.png` ,img)
 
@@ -32,7 +45,7 @@ bot.on('inline_query', async({ inlineQuery, answerInlineQuery }) => {
 		photo_url: encodeURI(url)
 	}]
 
-	return answerInlineQuery(results,{ cache_time: 1 ,is_personal: True})
+	return answerInlineQuery(results,{ cache_time: 0 ,is_personal: True})
 })
 
 bot.launch()
