@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/instkffff/Triglavian2image_telegram#readme",
   "dependencies": {
+    "serve-handler": "^6.1.2",
     "telegraf": "^3.38.0",
     "text2png": "^2.3.0"
   }

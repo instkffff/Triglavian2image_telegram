@@ -7,7 +7,7 @@ const fs = require('fs')
 const text2png = require('text2png')
 
 bot.on('inline_query', async({ inlineQuery, answerInlineQuery }) => {
-	let img = text2png('inlineQuery.query',{
+	let img = text2png( inlineQuery.query,{
 		textColor: 'white',
 		localFontPath:'./Triglavian.otf', 
 		localFontName: 'Triglavian',
@@ -19,7 +19,7 @@ bot.on('inline_query', async({ inlineQuery, answerInlineQuery }) => {
 
 	fs.writeFileSync(`./image/${inlineQuery.query}.png` ,img)
 
-	let url = `http://54.169.114.12:3400/image/${inlineQuery.query}.png`
+	let url = `http://54.169.114.12:3400/${inlineQuery.query}.png`
 
 	console.log(url)
 
