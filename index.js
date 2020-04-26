@@ -32,7 +32,7 @@ bot.on('inline_query', async({ inlineQuery, answerInlineQuery }) => {
 		photo_url: encodeURI(url)
 	}]
 
-	return answerInlineQuery(results,{ cache_time: 0 })
+	return answerInlineQuery(results,{ cache_time: 1 ,is_personal: True})
 })
 
 bot.launch()
