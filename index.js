@@ -28,11 +28,11 @@ bot.on('inline_query', async({ inlineQuery, answerInlineQuery }) => {
 	results = [{
 		type: 'photo',
 		id: 1,
-		thumb_url: url,
-		photo_url: url
+		thumb_url: encodeURI(url),
+		photo_url: encodeURI(url)
 	}]
 
-	return answerInlineQuery(results)
+	return answerInlineQuery(results,{ cache_time: 0 })
 })
 
 bot.launch()
