@@ -11,7 +11,7 @@ bot.on('inline_query', async({ inlineQuery, answerInlineQuery }) => {
 	try {
 		let img = text2png (inlineQuery.query,{
 			textColor: 'white',
-			localFontPath:'./Triglavian.otf', 
+			localFontPath:'./triglavian.otf', 
 			localFontName: 'Triglavian',
 			font: '30px Triglavian', 
 			lineSpacing:5, 
