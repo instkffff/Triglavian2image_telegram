@@ -21,7 +21,7 @@ bot.on('inline_query', async({ inlineQuery, answerInlineQuery }) => {
 		})
 		fs.writeFileSync(`./image/${inlineQuery.query}.png` ,img)
 
-		let url = `http://54.169.114.12:3400/${inlineQuery.query}.png`
+		let url = `https://server.nightcandle.cc/${inlineQuery.query}.png`
 		results = [{
 			type: 'photo',
 			id: 1,
@@ -34,8 +34,8 @@ bot.on('inline_query', async({ inlineQuery, answerInlineQuery }) => {
 		results = [{
 			type: 'photo',
 			id: 1,
-			thumb_url: 'http://54.169.114.12:3400/Triglavian.png',
-			photo_url: 'http://54.169.114.12:3400/Triglavian.png'
+			thumb_url: 'https://server.nightcandle.cc/Triglavian.png',
+			photo_url: 'https://server.nightcandle.cc/Triglavian.png'
 		}]
 		return answerInlineQuery(results,{ cache_time: 0})
 	}	
